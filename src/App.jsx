@@ -1,28 +1,25 @@
 import React, { useEffect } from "react";
-// import { Header, Footer } from "./components";
 import Header from "./pages/Header.jsx";
 import Footer from "./pages/Footer.jsx";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "animate.css";
-import WOW from "wowjs";
 import "./index.css";
 
 function App() {
-        useEffect(() => {
-                // Initialize WOW animations
-                new WOW.WOW().init();
+  useEffect(() => {
+    if (window.WOW) {
+      new window.WOW().init();
+    }
 
-                // Initialize Bootstrap carousel manually
-                const carouselElement = document.querySelector("#header-carousel");
-                if (carouselElement && window.bootstrap) {
-                        new window.bootstrap.Carousel(carouselElement, {
-                                interval: 3500, // 3.5 seconds
-                                ride: "carousel",
-                                wrap: true,
-                        });
-                }
-        }, []);
-
+    const carouselElement = document.querySelector("#header-carousel");
+    if (carouselElement && window.bootstrap) {
+      new window.bootstrap.Carousel(carouselElement, {
+        interval: 3500,
+        ride: "carousel",
+        wrap: true,
+      });
+    }
+  }, []);
         return (
                 <>
                         <Header />
