@@ -122,12 +122,11 @@ function App() {
 
                                                         {/* Left Side Image (Animated from Bottom) */}
                                                         <div
-                                                                className="col-lg-6 col-md-12 mb-4 mb-lg-0 wow animate__animated animate__fadeInUp"
-                                                                data-wow-delay="0.3s"
+                                                                className="col-lg-6 col-md-12 mb-4 mb-lg-0"
                                                         >
                                                                 <div className="about-img text-center">
                                                                         <img
-                                                                                src="/img/about-2.jpg"
+                                                                                src="./img/about-2.jpg"
                                                                                 alt="Saini Refrigeration - About Us"
                                                                                 className="img-fluid rounded-4 shadow-lg"
                                                                                 style={{
@@ -142,8 +141,7 @@ function App() {
 
                                                         {/* Right Side Content */}
                                                         <div
-                                                                className="col-lg-6 col-md-12 wow animate__animated animate__fadeInUp"
-                                                                data-wow-delay="0.5s"
+                                                                className="col-lg-6 col-md-12"
                                                         >
                                                                 <div className="about-content">
                                                                         <h2 className="fw-bold text-primary mb-4">About Us</h2>
